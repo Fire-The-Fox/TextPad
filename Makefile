@@ -39,3 +39,10 @@ uninstall:
 	rm $(DESTDIR)$(BIN_PATH)/TextPad
 	@echo "TextPad was uninstalled"
 	@echo
+
+test: clean build
+	@echo
+	@echo "Started testing"
+	./bin/TextPad
+	@echo "Testing ended"
+	@echo
